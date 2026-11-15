@@ -44,9 +44,9 @@ questions like these with tested code and results you can reproduce with one com
 
 #### How these projects are built
 
-- **Reproducible:** `make run` rebuilds every number and figure in each README from public data.
-  Conclusions are stable across package versions; the last digits are not, and versions are not
-  pinned yet.
+- **Reproducible:** each repo pins its package versions in `requirements.lock`; with them,
+  `make run` regenerates the README's numbers from public data: exactly in seven projects, and to
+  within small numerical differences in three, as each README states.
 - **Verified:** core methods are tested against independent references (PyTorch, statsmodels,
   SciPy, closed forms, simulations with known ground truth). CI runs on every push.
 - **Evaluated on held-out data:** temporal splits, tuning on train or validation only, bootstrap
