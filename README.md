@@ -53,4 +53,11 @@ questions like these with tested code and results you can reproduce with one com
   confidence intervals, and comparisons against simple baselines.
 - **Honest about limits:** every README says what did not work and where the method breaks.
 
-<sub>Earlier work (2023 notebooks on classification, forecasting, computer vision and web scraping) is in the repository list.</sub>
+#### Earlier work (2023)
+
+Twenty coursework notebooks and scrapers, each with a README that states the result and what is
+wrong with it. Three to start with:
+
+- [Rain prediction](https://github.com/faiqrasulov/Rain_Prediction_Neural_Network-): the notebook reported 68% test accuracy; the cause was a shuffled test loader, and the fixed evaluation gives 85%.
+- [Electricity contract selection](https://github.com/faiqrasulov/Electricity_Contract_Selection): 8,760 free-text meter readings parsed with one regular expression and priced under three contracts.
+- [Supermarket price tracking](https://github.com/faiqrasulov/Web_Scraping_Azerisupermarketchains): scheduled scrapers for three Azerbaijani chains with monthly comparison files.
